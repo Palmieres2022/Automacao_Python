@@ -1,7 +1,7 @@
 import os
 
 def organize_folder():
-    types = ['jpeg', 'zip', 'pdf']
+    types = ['jpeg', 'zip', 'pdf', 'img']
 
     base_path = os.path.expanduser('~')
     path = os.path.join(base_path, 'Downloads')
