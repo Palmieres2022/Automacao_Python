@@ -1,7 +1,7 @@
 import os
 
 def organize_folder():
-    types = ['jpeg', 'zip']
+    types = ['jpeg', 'zip', 'pdf']
 
     base_path = os.path.expanduser('~')
     path = os.path.join(base_path, 'Downloads')
@@ -19,7 +19,7 @@ def organize_folder():
                 old_path = os.path.join(path, file)
                 new_path = os.path.join(path, type_, file)
                 os.replace(old_path, new_path)
-                
+
 
 if __name__ == '__main__':
     organize_folder()
